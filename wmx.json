@@ -1,0 +1,43 @@
+{
+  "name": "pdfviewer",
+  "displayName": "PDF Viewer",
+  "description": "A React Native component for viewing PDF documents with loading states and error handling.",
+  "iconUrl": "icon.svg",
+  "webSupport": true,
+  "props": {
+    "source": {
+      "name": "source",
+      "displayName": "Source",
+      "description": "PDF source object with uri property or string URL.",
+      "type": "object",
+      "isRequired": true
+    },
+    "style": {
+      "name": "style",
+      "displayName": "Style",
+      "description": "Custom style for the PDF viewer container.",
+      "type": "object"
+    }
+  },
+  "events": {
+    "onLoadComplete": {
+      "name": "onLoadComplete",
+      "displayName": "On Load Complete",
+      "description": "Callback when PDF is loaded successfully. Returns number of pages and file path.",
+      "type": "object"
+    },
+    "onError": {
+      "name": "onError",
+      "displayName": "On Error",
+      "description": "Callback when PDF fails to load. Returns error details.",
+      "type": "object"
+    },
+    "onPageChanged": {
+      "name": "onPageChanged",
+      "displayName": "On Page Changed",
+      "description": "Callback when user navigates to a different page. Returns current page and total pages.",
+      "type": "object"
+    }
+  },
+  "styles": {}
+} 
